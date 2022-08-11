@@ -1,0 +1,38 @@
+.link {
+	--themeColor: var(--color);
+
+	&.github {
+		--themeColor: #ff1a4b;
+	}
+	&.twitter {
+		--themeColor: #1ca0f1;
+	}
+	&.portfolio {
+		--themeColor: #e3571b;
+	}
+
+	position: relative;
+	text-decoration: none;
+	color: var(--themeColor);
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 0%;
+		height: 2px;
+		background-color: var(--themeColor);
+		transition: 0.3s ease-out;
+	}
+
+	&:hover {
+		&::after {
+			width: 100%;
+		}
+	}
+
+	&::selection {
+		background-color: var(--color-select);
+	}
+}

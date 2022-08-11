@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/meta/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{title}}</title>
+    {{#if scriptPath}}
+		<script type="module" src={{scriptPath}} defer></script>
+    {{/if}}
+		<link rel="stylesheet" href="/styles/base.scss" />
+    {{#if stylePath}}
+    <link rel="stylesheet" href={{stylePath}} />
+    {{/if}}
+	</head>
+
+	<body>
+    {{> @partial-block}}
+	</body>
+</html>

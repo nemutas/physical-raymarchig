@@ -1,0 +1,27 @@
+{
+	"name": "physical-raymarchig",
+	"homepage": "https://nemutas.github.io/physical-raymarchig/",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"start": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"deploy": "npm run build && gh-pages -d dist"
+	},
+	"devDependencies": {
+		"@types/three": "^0.143.0",
+		"gh-pages": "^4.0.0",
+		"ress": "^5.0.2",
+		"sass": "^1.54.0",
+		"typescript": "^4.6.4",
+		"vite": "^3.0.0",
+		"vite-plugin-glsl": "^0.2.2",
+		"vite-plugin-handlebars": "^1.6.0"
+	},
+	"dependencies": {
+		"cannon-es": "^0.19.0",
+		"lil-gui": "^0.17.0",
+		"three": "^0.143.0"
+	}
+}

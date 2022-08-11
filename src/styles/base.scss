@@ -1,0 +1,12 @@
+@use 'ress';
+@use './partialsChunk.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+	--Poppins: 'Poppins', sans-serif;
+	--RobotoMono: 'Roboto Mono', monospace;
+	--color: #555;
+	--color-bg: #111;
+	--color-select: #eee;
+}
