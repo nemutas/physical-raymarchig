@@ -49,9 +49,9 @@ void main() {
   float totalDist = 0.0;
   float tMax = u_camPosZ + 2.0;
 
-  for(int i = 0; i < 256; i++) {
+  for(int i = 0; i < 128; i++) {
     float dist = sdf(rayPos);
-    if (abs(dist) < 0.001 || tMax < totalDist) break;
+    if (abs(dist) < 0.002 || tMax < totalDist) break;
     totalDist += dist;
     rayPos = camPos + totalDist * ray;
   }
