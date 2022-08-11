@@ -31,6 +31,7 @@ export class TCanvas extends TCanvasBase {
 			this.setCameraPosition(this.size.width)
 			this.setResizeCallback()
 			this.setPostprocessing()
+			this.setDispose()
 			this.animate(this.update)
 		})
 	}
@@ -138,5 +139,11 @@ export class TCanvas extends TCanvasBase {
 		spheres.forEach((sphere, i) => {
 			this.screenMat!.uniforms.u_spheres.value[i].position = sphere.position
 		})
+	}
+
+	private setDispose = () => {
+		this.disposeCallback = () => {
+			this.simulator.dispose()
+		}
 	}
 }

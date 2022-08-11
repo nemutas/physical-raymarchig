@@ -87,4 +87,8 @@ export class Simulator {
 		renderer.render(this.scene, this.camera)
 		renderer.setRenderTarget(null)
 	}
+
+	dispose = () => {
+		this.mouse3d.dispose()
+	}
 }

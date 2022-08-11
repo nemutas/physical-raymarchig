@@ -32,5 +32,6 @@ export class Mouse3d {
 
 	dispose = () => {
 		document.removeEventListener('mousemove', this.handleMouseMove)
+		document.removeEventListener('touchmove', this.handleTouchMove)
 	}
 }
